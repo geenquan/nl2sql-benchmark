@@ -61,6 +61,7 @@ nl2sql-benchmark/
 - [开发任务清单](TODO.md)
 - [架构说明](docs/architecture.md)
 - [数据集与数据库约定](docs/datasets-and-dialects.md)
+- [本地开发数据说明](docs/dev-data.md)
 - [指标口径](docs/metrics.md)
 
 ## 6. 安全与数据管理

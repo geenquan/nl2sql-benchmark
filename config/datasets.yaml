@@ -10,8 +10,11 @@ datasets:
     supported_dialects:
       - sqlite
     sqlite_only: true
-    # TODO: confirm the local Spider 2.0 release layout and SQLite task manifest.
     unsupported_task_policy: skip_with_reason
+    # 本地 Spider 2.0-Lite 布局与开发子集，见 docs/dev-data.md。
+    # 注意：Loader 尚未实现，以下配置当前不生效，仅作为约定路径。
+    task_file: ./data/spider2/spider2-lite/spider2-lite.jsonl
+    dev_manifest: ./data/spider2/dev_manifest.json
 
   cspider:
     enabled: true
@@ -19,4 +22,8 @@ datasets:
     loader: cspider
     root: ./data/cspider
     dialect: sqlite
-    # TODO: confirm local CSpider file layout and split names.
+    # 本地 CSpider 布局与开发子集，见 docs/dev-data.md。
+    # 注意：Loader 尚未实现，以下配置当前不生效，仅作为约定路径。
+    task_file: ./data/cspider/cspider/dev.json
+    schema_file: ./data/cspider/cspider/tables.json
+    dev_manifest: ./data/cspider/dev_manifest.json
