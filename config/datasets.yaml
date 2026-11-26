@@ -1,0 +1,22 @@
+# Dataset paths are local and intentionally not bundled with this scaffold.
+data_root: ./data
+
+datasets:
+  spider2:
+    enabled: true
+    language: en
+    loader: spider2
+    root: ./data/spider2
+    supported_dialects:
+      - sqlite
+    sqlite_only: true
+    # TODO: confirm the local Spider 2.0 release layout and SQLite task manifest.
+    unsupported_task_policy: skip_with_reason
+
+  cspider:
+    enabled: true
+    language: zh
+    loader: cspider
+    root: ./data/cspider
+    dialect: sqlite
+    # TODO: confirm local CSpider file layout and split names.

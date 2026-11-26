@@ -1,0 +1,9 @@
+# Register concrete adapters here after they are implemented.
+methods: {}
+
+# Example (not active):
+# methods:
+#   my_method:
+#     type: research
+#     class_path: nl2sql_benchmark.methods.research.my_method:MyMethod
+#     config: {}

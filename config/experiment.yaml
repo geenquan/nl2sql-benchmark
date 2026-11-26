@@ -1,0 +1,25 @@
+experiment:
+  name: null
+  seed: 42
+  max_samples: null
+  resume: true
+
+prediction:
+  save_raw: true
+  format: jsonl
+  overwrite_existing_run: false
+
+execution:
+  timeout_seconds: 30
+  read_only: true
+  dialect: dataset
+
+metrics:
+  exact_match: true
+  execution_success: true
+  execution_accuracy: true
+  table_prf: true
+  column_prf: true
+  latency: true
+  token_usage: true
+  api_cost: auto  # only when reliable provider pricing is available
